@@ -1,0 +1,53 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/bGLAZv1m", true))()
+
+local Watermark = library:CreateWatermark("Sup")
+
+local Window = library:CreateWindow("CUTEWARE CRACKED", Vector2.new(492, 598), Enum.KeyCode.RightShift)
+
+local Tab = Window:CreateTab("Aimbot")
+
+local Sector = Tab:CreateSector("Sector", "left")
+
+local Button = Sector:AddButton("Button", function()
+    print("Button")
+end)
+
+local Label = Sector:AddLabel("Label")
+
+local Toggle = Sector:AddToggle("Toggle", false, function(val)
+    print("Toggle", val)
+end) do
+    local Keybind = Toggle:AddKeybind(Enum.KeyCode.H)
+
+    local ColorPicker = Toggle:AddColorpicker(Color3.new(1, 0, 1), function(val)
+        print("Toggle ColorPicker", val)
+    end)
+end
+
+local Dropdown = Sector:AddDropdown("Dropdown", {"Head", "Chest", "Limbs"}, "Yes", function(val)
+    print("Dropdown", val)
+end)
+
+local Keybind = Sector:AddKeybind("Keybind", "None", function(key)
+    print("Keybind Changed", key) -- on changed keybind
+end, function(val)
+    print("Keybind", val) -- on pressed keybind
+end)
+
+local ColorPicker = Sector:AddColorpicker("ColorPicker", Color3.new(1, 0, 1), function(val)
+    print("ColorPicker", val)
+end)
+
+local Slider = Sector:AddSlider("Slider", 0, 0, 100, 1, function(val)
+    print("Slider", val)
+end)
+
+local Textbox = Sector:AddTextbox("Textbox", "Default Text", function(val)
+    print("Textbox", val)
+end)
+
+local Visuals = Window:CreateTab("Visuals")
+
+local Misc = Window:CreateTab("Misc")
+
+local Settings = Window:CreateTab("Settings")
