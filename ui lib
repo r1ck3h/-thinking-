@@ -76,7 +76,7 @@ function library:CreateWatermark(name)
     watermark.label.Name = "FPSLabel"
     watermark.label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     watermark.label.BackgroundTransparency = 1.000
-    watermark.label.Position = UDim2.new(-0.00268030656, 0, 0, 0)
+    watermark.label.Position = UDim2.new(1, 0, 0, 0)
     watermark.label.Size = UDim2.new(0, 238, 0, 25)
     watermark.label.Font = library.theme.font
     watermark.label.ZIndex = 6
@@ -117,9 +117,9 @@ function library:CreateWatermark(name)
 
         local currentTime = os.clock()
         counter = counter + 1
-        if currentTime - startTime >= 0 then 
+        if currentTime - startTime >= 1 then 
             local fps = math.floor(counter / (currentTime - startTime))
-            counter = 0
+            counter = 1
             startTime = currentTime
 
             if fps ~= oldfps then
