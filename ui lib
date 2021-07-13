@@ -76,7 +76,7 @@ function library:CreateWatermark(name)
     watermark.label.Name = "FPSLabel"
     watermark.label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     watermark.label.BackgroundTransparency = 1.000
-    watermark.label.Position = UDim2.new(1, 0, 0, 0)
+    watermark.label.Position = UDim2.new(0, 0, 0, 0)
     watermark.label.Size = UDim2.new(0, 238, 0, 25)
     watermark.label.Font = library.theme.font
     watermark.label.ZIndex = 6
