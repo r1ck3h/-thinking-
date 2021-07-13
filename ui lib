@@ -123,7 +123,7 @@ function library:CreateWatermark(name)
             startTime = currentTime
 
             if fps ~= oldfps then
-                watermark.label.Text = " " .. name .." | ".. gamename .." | " .. fps .." FPS"
+                watermark.label.Text = " " .. name .." | ".. gamename .." | ".. time .." | " .. fps .." FPS"
     
                 watermark.label.Size = UDim2.new(0, watermark.label.TextBounds.X+10, 0, 25)
                 watermark.mainbar.Size = UDim2.new(0, watermark.label.TextBounds.X+6, 0, 25)
