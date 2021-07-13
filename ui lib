@@ -94,7 +94,7 @@ function library:CreateWatermark(name)
     watermark.topbar.BackgroundColor3 = library.theme.accentcolor
     watermark.topbar.BorderSizePixel = 0
     watermark.topbar.Visible = watermark.Visible
-    watermark.topbar.Size = UDim2.new(0, 0, 0, 1)
+    watermark.topbar.Size = UDim2.new(0, 0, 0, 0)
 
     watermark.mainbar.Size = UDim2.new(0, watermark.label.TextBounds.X+6, 0, 25)
     watermark.topbar.Size = UDim2.new(0, watermark.label.TextBounds.X+6, 0, 1)
