@@ -116,7 +116,7 @@ function library:CreateWatermark(name)
         watermark.BlackOutline.Visible = watermark.Visible
 
         local currentTime = os.clock()
-        counter = counter + 0
+        counter = counter + 1
         if currentTime - startTime >= 0 then 
             local fps = math.floor(counter / (currentTime - startTime))
             counter = 0
